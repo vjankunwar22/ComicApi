@@ -11,6 +11,7 @@ const App = () => {
     <Router>
     <div className='bg-red-500'>
       <Header/>
+      <Home/>
       <Routes>
         <Route path="/signin" element={<SignIn />} />
         <Route path="/home" element={<Home/>} />
