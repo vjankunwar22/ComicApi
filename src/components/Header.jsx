@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import CryptoJS from 'crypto-js'
 
+
 const Header = () => {
   const [opened, setOpened] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -31,11 +32,12 @@ const Header = () => {
   };
 
   return (
+    <div>
     <div className="bg-black py-4 fixed top-0 w-full z-50">
       <Container size="lg">
         <div className="flex items-center justify-between">
           <Link to="/home">
-            <div className="text-white text-2xl font-bold">
+            <div className="text-white md:[55px] lg:ml-[-72px] text-2xl font-bold">
               ComicAxis
             </div>
           </Link>
@@ -161,6 +163,8 @@ const Header = () => {
           </Drawer>
         </div>
       </Container>
+    </div>
+    
     </div>
   )
 }

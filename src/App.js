@@ -5,13 +5,16 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './components/Home';
 import SignUp from './components/SignUp';
 import ComicDetails from './components/ComicDetails';
+import MarvelApp from './components/MarvelApp';
+
+
 
 const App = () => {
   return (
     <Router>
-    <div className='bg-red-500'>
+    <div className='bg-red-500'> 
       <Header/>
-      <Home/>
+      
       <Routes>
         <Route path="/signin" element={<SignIn />} />
         <Route path="/home" element={<Home/>} />
@@ -19,6 +22,7 @@ const App = () => {
         <Route path="/comic/:id" element={<ComicDetails/>} />
       </Routes>        
     </div>
+    
     </Router>
   )
 }
