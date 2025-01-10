@@ -30,7 +30,7 @@ const ComicDetails = () => {
   if (!comic) return <p className="text-center text-xl pt-20">Loading...</p>;
 
   return (
-    <div className="container mx-auto px-4 py-20">
+    <div className="container flex justify-center items-center mx-auto h-screen px-4 py-20">
       <div className="max-w-4xl mx-auto bg-black rounded-lg shadow-lg p-8">
         <h1 className="text-3xl font-bold text-white mb-6">{comic.title}</h1>
         <div className="flex flex-col md:flex-row gap-8">

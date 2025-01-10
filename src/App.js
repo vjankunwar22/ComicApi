@@ -12,12 +12,12 @@ import MarvelApp from './components/MarvelApp';
 const App = () => {
   return (
     <Router>
-    <div className='bg-red-500'> 
+    <div className='bg-red-500 h-full'> 
       <Header/>
       
       <Routes>
         <Route path="/signin" element={<SignIn />} />
-        <Route path="/home" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/comic/:id" element={<ComicDetails/>} />
       </Routes>        

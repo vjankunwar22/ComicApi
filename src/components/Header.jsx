@@ -36,7 +36,7 @@ const Header = () => {
     <div className="bg-black py-4 fixed top-0 w-full z-50">
       <Container size="lg">
         <div className="flex items-center justify-between">
-          <Link to="/home">
+          <Link to="/">
             <div className="text-white md:[55px] lg:ml-[-72px] text-2xl font-bold">
               ComicAxis
             </div>
